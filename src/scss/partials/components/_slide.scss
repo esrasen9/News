@@ -1,0 +1,59 @@
+.slide-news-container{
+  width: 100vw;
+}
+.slide-news-left {
+  height: 40vh;
+}
+
+.slide-image {
+  object-fit: cover;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media only screen and (max-width: $screen-size-m) {
+  .slide-news-right-container {
+    display: none;
+  }
+  .slide-news-left {
+    margin-top: 3%;
+    height: 68vh
+  }
+}
+
+@media only screen and (min-width: $screen-size-m) {
+  .top-news-container {
+    @include flexy($dis:flex,$jus:center,$al:flex-start);
+    width: 100%;
+  }
+  .slide-news-left {
+    width: 55%;
+    height: 60vh
+  }
+  .slide-news-right-container {
+    display: flex;
+    width: 45%;
+  }
+  .slide-news-right-card {
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 0 4%;
+    padding: 5px;
+    @include flexy($dis:flex,$dir:column,$jus:space-between,$al:center);
+    .news-img {
+      cursor: pointer;
+      max-width: 100%;
+      object-fit: cover;
+    }
+    .news-title {
+      cursor: pointer;
+    }
+  }
+}
+@media only screen and (max-width: $screen-size-s) {
+  .slide-news-left {
+    margin-top: 15%;
+    height: 38vh;
+  }
+}

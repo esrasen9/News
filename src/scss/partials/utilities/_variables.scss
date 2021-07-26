@@ -1,0 +1,17 @@
+$color-primary: #fff;
+$color-secondary: #bd1c3b;
+$color-accent: crimson;
+$logo-color: darken($color-primary,20%);
+
+$border-color: rgba(128, 128, 128, 0.91);
+$header-color: rgba(139, 8, 8, 0.7);
+$text-color: rgba(161, 159, 159, 0.97);
+$placeholder-color: lighten($text-color,40%);
+$error-color: rgba(255, 9, 9, 0.7);
+$input-color: rgb(54, 53, 53);
+
+$font-family: 'Lato', sans-serif;
+
+$screen-size-s: 800px;
+$screen-size-m: 1300px;
+$screen-size-l: 1700px;

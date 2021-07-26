@@ -1,0 +1,25 @@
+.logo {
+  color: $color-primary;
+  width: 7vw;
+  height: 6vw;
+  object-fit: cover;
+  &:hover {
+    color: $color-secondary;
+  }
+}
+.navbar-container {
+  @include flexy($dis:flex,$jus:space-between,$al:center);
+  @include font-stack($fow:bolder);
+  margin: 0 4%;
+  @media only screen and (max-width: $screen-size-s) {
+    flex-wrap: wrap;
+    a {
+      margin: 1% 3% 2%;
+    }
+  }
+
+}
+
+.active-nav-link {
+  color: $color-primary;
+}

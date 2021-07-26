@@ -1,0 +1,13 @@
+@mixin flexy ($dis,$dir:null,$jus:null,$al:null){
+  display: $dis;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $al;
+}
+
+
+@mixin font-stack($fow:null,$fos:null) {
+  font-family: $font-family;
+  font-weight: $fow;
+  font-style: $fos;
+}
